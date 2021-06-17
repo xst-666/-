@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fill in selling information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="favicon.ico" rel="icon">
+    <link rel="stylesheet" href="assets/css/naranja.min.css">
+    <link rel="stylesheet" href="assets/layui/css/layui.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/load.css" />
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="//cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/Item_Information.css">
+    <style>
+        .layui-nav .layui-this:after {
+            display: none;
+        }
+
+        .layui-nav .layui-nav-bar {
+            display: none;
+        }
+
+        .my-container {
+            width: 82% !important;
+        }
+
+
+        .bar7 form {
+            height: 42px;
+        }
+
+        .bar7 input {
+            width: 500px;
+            border-radius: 42px;
+            border: 2px solid #324B4E;
+            background: #ffffff;
+            transition: .3s linear;
+        }
+
+        .bar7 input:focus {
+            width: 600px;
+        }
+
+        .bar7 button {
+            background: none;
+            top: -2px;
+            right: 0;
+        }
+
+        .bar7 button:before {
+            content: "\f002";
+            font-family: FontAwesome;
+            color: #324b4e;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="ew-header" style="display: inline;">
+        <img class="layui-logo" src="assets/images/logo.png" style="height:50px;padding: 10px;display: inline;" />
+        <div style="display: inline;position: relative;" class="bar7">
+            <form action="#" method="#" style="display: inline;">
+                <input type="text" name="condition" placeholder="Search or jump to.." style="line-height: 2em;padding-left: 2em;">
+                <img src="assets/images/search.png" alt="search" style="position: absolute;height: 1.5em;right: 8px;top: -1px;">
+            </form>
+        </div>
+        <div class="ew-nav-group">
+            <div class="nav-toggle"><i class="layui-icon layui-icon-more-vertical"></i></div>
+            <ul class="layui-nav" lay-filter="ew-header-nav">
+                <li class="layui-nav-item">
+                    <a lay-href="#">Login</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a lay-href="#">Register</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="#" target="_blank">Shopping Cart</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="#" target="_blank">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--main-->
+ 	<div>
+ 		<div style="padding-top: 40px; padding-left: 50px">
+ 			<a href="#">< Back to the last page</a>
+ 		</div>
+ 		<br>
+ 		<br>
+ 		<center><h3><div class="container-tilte">News Release</div></h3></center>
+ <!--main of main###############################################################################-->
+ 	<form class="form-horizontal" style="width: 100%" action="Fill_in_selling_information.jsp" method="post">
+ 		<div class="form-group">
+ 			<label class="control-label col-sm-4">Item Name:</label>
+ 			<div class="col-sm-6">
+ 				<input type="text" name="It_Na" placeholder="Please enter the name of your item" class="form-control">
+ 			</div>
+ 		</div>
+ 	
+
+ <br>
+ 
+ 		<div class="form-group">
+ 			<label class="control-label col-sm-4">New or Old:</label>
+ 			<div class="col-sm-8">
+ 				<input type="radio" name="It_Ne" value="1">Almost New<br>
+				<input type="radio" name="It_Ne" value="0">Old
+ 			</div>
+ 		</div>
+ 	
+<br>
+
+
+<div class="form-group">
+ 			<label class="control-label col-sm-4">Price:</label>
+ 			<div class="col-sm-6">
+ 			<input type="text" name="It_Pr" style="height:40px" placeholder="Please enter your estimated price" class="form-control">
+ 			</div>
+ 	 	</div>
+
+<br>
+ 	
+ 		<div class="form-group">
+ 			<label class="control-label col-sm-4">Item Description:</label>
+ 			<div class="col-sm-6">
+ 			<input type="text" name="It_De" style="height:40px" placeholder="Describe the reason for the transfer, the source of the item, whether it can be negotiated, how the transaction, the highlights of the item / defects, etc.
+" class="form-control">
+ 			</div>
+ 	 	</div>
+
+<br>
+ 	
+ 		<div class="form-group">
+ 			<label class="control-label col-sm-4">Item Pictures:</label>
+			<div class="col-sm-6">
+ 			<input type="file" name="It_Pi" >
+ 			</div>
+ 		</div>
+ 	 	
+<br>
+ 	
+ 		<div class="form-group">
+ 			<label class="control-label col-sm-4">Trading Location:</label>
+ 			<div class="col-sm-6">
+ 				<input type="text" name="It_Tr" placeholder="Please enter the Trading Location" class="form-control">
+ 			</div>
+ 		</div>
+ 	
+<br>
+ 	
+ 		<div class="form-group">
+ 			<label class="control-label col-sm-4">Drop time:</label>
+ 			<div class="col-sm-6">
+ 				<input type="text" name="It_Dr" placeholder="Please enter the drop time of your item" class="form-control">
+ 			</div>
+ 		</div>
+<!--main of main####################################################################################-->	
+ 		<center>
+ 		<br><br><br>
+ 		<button type="submit" class="btn btn-primary" style="width:400px; height: 50px ">Submit</button>
+		</center>
+ 	</form>	
+
+ 
+
+
+       
+ 	</div>
+
+<br>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- footer -->
+    <div class="ew-footer">
+        <div class="layui-container">
+            <div class="layui-row layui-col-space30">
+                <div class="layui-col-md6">
+                    <h2 style="font-size: 20px;" class="footer-item-title">Contact us</h2>
+                    <p class="img-group" style="height: 105px;font-size: 20px;">
+                        <img src="assets/images/pizza.png" style="border-radius: 2px;height: 100px;width: 100;" />
+                        <span style="font-size: 20px;">Group leader&nbsp;:&nbsp;Hogan</span><br>
+                        Group numbers&nbsp;:&nbsp;Bruno&nbsp;&nbsp; Louis&nbsp;&nbsp; Carvel&nbsp;&nbsp; Harlan&nbsp;&nbsp; Emiya shiro
+                    </p>
+                </div>
+                <div class="layui-col-md2">
+
+                </div>
+                <div class="layui-col-md4">
+                    <h2 style="font-size: 20px;" class="footer-item-title">Partner</h2>
+                    <img src="assets/images/logo.png" alt="" style="height: 100px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- js部分 -->
+    <script type="text/javascript" src="assets/js/naranja.js"></script>
+    <script type="text/javascript" src="assets/layui/layui.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+    <script>
+        layui.use(['layer', 'form', 'jquery'], function () {
+            var $ = layui.jquery;
+            var layer = layui.layer;
+            var form = layui.form;
+            var jquery = layui.jquery;
+
+            /* setTimeout(function(){
+                naranja()['log']({
+                  title: 'Pro 版 本 即 将 发 布',
+                  text: '',
+                  timeout: 'keep',
+                  buttons: [{
+                    text: '敬请期待',
+                    click: function (e) {
+                      naranja().success({
+                        title: '通知',
+                        text: '通知被接受'
+                      })
+                    }
+                  },{
+                    text: '前往关注',
+                    click: function (e) {
+                      e.closeNotification()
+                    }
+                  }]
+                })
+            },2000) */
+        });
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?c135516339e1fdab9fbcf956fedb4014";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+
+</html>
